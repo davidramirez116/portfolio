@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200;
+}
+
+.card {
+  padding: 2em;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-secondary {
+  @apply bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded;
+}
