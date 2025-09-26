@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
 import emailjs from '@emailjs/browser';
+import headshot from '/assets/headshot2.jpeg'
 
 export default function App(){
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -183,7 +184,7 @@ export default function App(){
               <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-full p-1 shadow-2xl">
                 <div className="bg-white rounded-full p-2">
                   <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center overflow-hidden">
-                    <div className="text-9xl"><img src="src\assets\headshot2.jpeg" alt="Headshot" /></div>
+                    <div className="text-9xl"><img src={headshot} alt="Headshot" /></div>
                   </div>
                 </div>
               </div>
@@ -203,7 +204,7 @@ export default function App(){
             <div className="md:w-1/3 flex justify-center">
               <div className="relative">
                 <div className="w-64 h-64 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl shadow-xl flex items-center justify-center overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                  <div className="text-9xl"><img src="src\assets\headshot2.jpeg" alt="Headshot" /></div>
+                  <div className="text-9xl"><img src={headshot} alt="Headshot" /></div>
                 </div>
               </div>
             </div>
