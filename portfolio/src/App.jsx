@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
 import emailjs from '@emailjs/browser';
-import headshot from '/assets/headshot2.jpeg'
+import headshot from './assets/headshot2.jpeg'
 
 export default function App(){
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
